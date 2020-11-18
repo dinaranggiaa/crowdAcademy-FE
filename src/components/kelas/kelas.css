@@ -1,0 +1,35 @@
+body {
+    background: #ffffff !important;
+    min-height: 100vh;
+    display: flex;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+.p {
+    margin-top: 100px;
+  }
+  
+  .list-menu {
+    /* border: 1px black solid;
+    width: 250px;
+    height: 270;
+    padding: 15px 15px 0 15px; */
+  
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    padding: 15px 15px 0 15px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    height: 300px;
+  }
+  
+  .img-thumb {
+    width: 220px;
+    height: 240px;
+  }
+  
+  .name-thumb {
+    text-align: center;
+    margin-top: 10px;
+  }
+  

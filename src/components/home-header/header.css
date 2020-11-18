@@ -1,0 +1,15 @@
+.header-menu {
+  background-color: #59a0fe;
+  height: 300px;
+  color: #ffffff;
+  padding: 65px 15px 15px 65px;
+}
+
+.header-judul {
+  font-size: 25px;
+}
+
+.line {
+  width: 560px;
+  line-height: normal;
+}

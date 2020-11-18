@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
   height: fit-content;
 }
@@ -36,4 +36,9 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.footer{
+  height: 50px;
+  background-color: #167BFF;;
 }

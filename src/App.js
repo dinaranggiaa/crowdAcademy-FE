@@ -24,8 +24,13 @@ function App() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={"/home"}>
+                  <Link className="nav-link" href="#kelaspemrograman">
                     Kelas Pemrograman
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to={"/home"}>
+                    Artikel
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -43,19 +48,20 @@ function App() {
           </div>
         </nav>
         <div>
-          <div className="auth-wrapper">
-            <div className="auth-inner">
-              <Switch>
-                <Route exact path="/" component={Login} />
-                <Route path="/sign-in" component={Login} />
-                <Route path="/sign-up" component={SignUp} />
-              </Switch>
-            </div>
-          </div>
+          {/* <div className="auth-wrapper">
+            <div className="auth-inner"> */}
+          <Switch>
+            <Route exact path="/" component={Login} />
+            <Route path="/sign-in" component={Login} />
+            <Route path="/sign-up" component={SignUp} />
+          </Switch>
+          {/* </div>
+          </div> */}
         </div>
         <Switch>
           <Route path="/home" component={PenggunaUmum} />
         </Switch>
+        <div className="footer"></div>
       </div>
     </Router>
   );

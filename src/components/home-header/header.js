@@ -3,12 +3,11 @@ import "./header.css";
 
 const HeaderComponent = (props) => {
   return (
-    <div className="header-menu">
-      <p className="header-judul">
-        Belajar Pemrograman dan Desain Grafis <br></br>
-        dengan <br></br>
-        Materi Terstruktur dan Tanpa Bingung
-      </p>
+    <div className="header-home">
+      <span className="header-judul">
+        Belajar Pemrograman dan Desain Grafis <br></br>dengan<br></br>Materi
+        Terstruktur dan Tanpa Bingung
+      </span>
       <div className="line">
         <hr></hr>
       </div>

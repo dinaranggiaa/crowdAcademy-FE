@@ -1,3 +1,6 @@
+*{
+    align-self: right;
+}
 .logo {
   width: 40px;
 }

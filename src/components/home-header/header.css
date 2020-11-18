@@ -1,12 +1,18 @@
-.header-menu {
-  background-color: #59a0fe;
+.header-home {
+
+  
   height: 300px;
   color: #ffffff;
   padding: 65px 15px 15px 65px;
+  border-radius: 50px;
 }
 
 .header-judul {
-  font-size: 25px;
+  font-size: 20px;
+  text-align: left;
+  /* border: 1px solid black; */
+  padding: 0;
+  
 }
 
 .line {

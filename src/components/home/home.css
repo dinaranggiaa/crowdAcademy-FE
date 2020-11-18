@@ -1,15 +1,31 @@
+.home-menu {
+  text-align: center;
+  height: fit-content;
+  background-color: #fff;
+  /* border: 1px solid black; */
+  padding: 50px 0 20px 0;
+}
+
+.home-judul {
+  font-size: 25px;
+  font-weight: bolder;
+}
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 40px;
+
+  /* padding: 0 150px 0 150px; */
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
+  border-radius: 5px;
+  margin: auto;
   flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+  max-width: 20%;
+  padding: 20px 5px 0 5px;
+  background-color: #88bcff;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
 }
 
 .column img {
@@ -18,6 +34,15 @@
 }
 
 .img-thumb {
-  border: 1px #88bcff solid;
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 140px;
+  height: 160px;
+  background-color: #ffffff;
+}
+
+.name-thumb {
+  font-family: "Courier New", Courier, monospace;
+  padding: 25px 5px 10px 5px;
+  color: #ffffff;
+  font-size: 20px;
 }

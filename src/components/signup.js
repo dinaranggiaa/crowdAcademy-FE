@@ -15,10 +15,10 @@ export default class SignUp extends Component {
                     <label>Level</label>
                    {/* // <input type="text" className="form-control" placeholder="Level" /> */}
                     <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-    <option selected>Pilih...</option>
-    <option value="1">Pelajar</option>
-    <option value="2">Pengajar</option>
-  </select>
+                        <option selected>Pilih...</option>
+                        <option value="1">Pelajar</option>
+                        <option value="2">Pengajar</option>
+                    </select>
                 </div>
 
                 <div className="form-group">

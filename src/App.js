@@ -43,6 +43,11 @@ function App() {
                     Daftar
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to={"/profil"}>
+                    Profil
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

@@ -9,8 +9,8 @@ const HomeComponent = (props) => {
     <div className="home-menu">
       <p className="home-judul">MENGAPA BELAJAR DI CROWD ACADEMY?</p>
       <br></br>
-      <div className="row">
-        <div className="column">
+      <div className="row ">
+        <div className="column container">
           <img src={icon1} alt="img-menu" className="img-thumb" />
           <p className="name-thumb">Akses Puluhan Kelas</p>
         </div>

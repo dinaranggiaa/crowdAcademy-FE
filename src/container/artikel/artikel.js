@@ -1,17 +1,16 @@
 import React, { Component } from "react";
-import "./login.css";
 
-export default class Login extends Component {
+
+export default class Artikel extends Component {
   render() {
     return (
       <div className="box-form">
         <div className="box-row">
           <div className="box-column">
             <form className="form">
-              <h3>Masuk</h3>
-
+              <h3>Artikel</h3>
               <div className="form-group">
-                <label>Email</label>
+                <label>Artikel</label>
                 <input
                   type="email"
                   className="form-control"
@@ -20,7 +19,7 @@ export default class Login extends Component {
               </div>
 
               <div className="form-group">
-                <label>Password</label>
+                <label>Artikel</label>
                 <input
                   type="password"
                   className="form-control"

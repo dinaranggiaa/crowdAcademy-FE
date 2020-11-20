@@ -17,8 +17,10 @@ export default class Profil extends Component {
                         <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image" /> 
                       </div>
                       <h6 class="f-w-600">Name</h6>
-                      <p>Job</p>
+                      <p>State/status</p>
+                      <p>need summon button here from upProfile</p>
                       <upProfil />
+                      <p>FYI upProfil pake react-bootstrap kalo belum ada npm install</p>
                     </div>
                   </div>
                   <div class="col-sm-8">

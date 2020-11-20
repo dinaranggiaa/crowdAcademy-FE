@@ -1,8 +1,17 @@
 import React, { Component } from "react";
 import "./profil.css";
-import upProfil from "./upProfil";
+import {Button, Modal} from 'react-bootstrap'
 
 export default class Profil extends Component {
+  constructor(){
+    super()
+    this.state={
+        show:false
+    }
+}
+modalUp(){
+    this.setState({show:!this.state.show})
+}
   render() {
     return (
       <div class="page-content page-container" id="page-content">
@@ -18,9 +27,22 @@ export default class Profil extends Component {
                       </div>
                       <h6 class="f-w-600">Name</h6>
                       <p>State/status</p>
-                      <p>need summon button here from upProfile</p>
-                      <upProfil />
-                      <p>FYI upProfil pake react-bootstrap kalo belum ada npm install</p>
+                      <div>
+                          <Button onClick={()=>{this.modalUp()}}>Edit Profile</Button>
+                          <Modal show={this.state.show} onHide={()=>{this.modalUp()}}>
+                              <Modal.Header closeButton>
+                                  Form Update Profile Data
+                              </Modal.Header>
+                              <Modal.Body>
+                                  Input form in this part
+                              </Modal.Body>
+                              <Modal.Footer>
+                                  <Button onClick={()=>{this.modalUp()}}>
+                                      Close
+                                  </Button>
+                              </Modal.Footer> 
+                          </Modal>
+                      </div>
                     </div>
                   </div>
                   <div class="col-sm-8">

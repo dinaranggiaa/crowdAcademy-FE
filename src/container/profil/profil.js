@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./profil.css";
+import upProfil from "./upProfil";
 
 export default class Profil extends Component {
   render() {
@@ -16,7 +17,8 @@ export default class Profil extends Component {
                         <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image" /> 
                       </div>
                       <h6 class="f-w-600">Name</h6>
-                      <p>Job</p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                      <p>Job</p>
+                      <upProfil />
                     </div>
                   </div>
                   <div class="col-sm-8">

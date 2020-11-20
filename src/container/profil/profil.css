@@ -30,9 +30,9 @@ body {
   border-radius: 5px 0 0 5px
 }
 
-.bg-c-lite-green {
-  background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
-  background: linear-gradient(to right, #1c8ef9, #afafff)
+.bg-c-lite-blue {
+  background: -webkit-gradient(linear, left top, right top, from(#9abaf7), to(#2e6df3));
+  background: #6ea7fde5 /*linear-gradient(to right, #2193fd, #eeeeff)*/
 }
 
 .user-profile {

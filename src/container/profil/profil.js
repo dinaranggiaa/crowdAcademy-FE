@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import "./profil.css";
 
-export default class profil extends Component {
+export default class Profil extends Component {
   render() {
     return (
       <div class="page-content page-container" id="page-content">
         <div class="padding">
           <div class="row container d-flex justify-content-center">
-            <div class="col-xl-6 col-md-12">
+            <div class="col-xl-10 col-md-12">
               <div class="card user-card-full">
                 <div class="row m-l-0 m-r-0">
-                  <div class="col-sm-4 bg-c-lite-green user-profile">
+                  <div class="col-sm-4 bg-c-lite-blue user-profile">
                     <div class="card-block text-center text-white">
                       <div class="m-b-25"> 
                         <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image" /> 

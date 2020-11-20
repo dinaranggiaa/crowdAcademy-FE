@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./pageKelas.css";
+import "./detailKelas.css";
 
 export default class DetailKelas extends Component {
   render() {

@@ -2,36 +2,25 @@ import React, { Fragment, useEffect } from "react";
 import { BrowserRouter, Link } from "react-router-dom";
 import "./pageKelas.css";
 import { useDispatch, useSelector } from "react-redux";
-import { listKelas } from "../../../actions/pelajarActions";
-import { listKelasumum } from "../../../actions/userActions";
-import icon1 from '../../../asset/icon-home-1.png';
+import { listKelasumum } from "../../../../actions/userActions";
+import icon1 from "../../../../asset/icon-home-1.png";
 
 const PageKelas = ({ history }) => {
   const dispatch = useDispatch();
 
-  const userLogin = useSelector((state) => state.userLogin);
-  const kelasList = useSelector((state) => state.kelasList);
+  const kelasListUmum = useSelector((state) => state.kelasListUmum);
+  console.log("kelasnih", kelasListUmum);
 
-  const { token } = userLogin;
-  const { kelas } = kelasList;
-
-  console.log("userlogin katanya", token);
-  console.log("kelas katanya", kelas);
-
+  const { kelas } = kelasListUmum;
+  console.log("kelasnih", kelasListUmum);
   useEffect(() => {
-    if (token) {
-      dispatch(listKelas());
-    } else {
-      dispatch(listKelasumum);
-    }
-  }, [dispatch, history, token]);
+    dispatch(listKelasumum());
+  }, [dispatch, history]);
 
   return (
     <BrowserRouter>
       <Fragment>
         <div className="header" id="kelaspemrograman">
-          <br></br>
-          <br></br>
           <br></br>
           <p className="judul-header">Kelas Populer Pemrograman</p>
           <div className="row-pemrograman container">
@@ -41,7 +30,7 @@ const PageKelas = ({ history }) => {
                 <p className="judul-thumb">{row.judul_kelas}</p>
                 <p className="isi-thumb">{row.detail_kelas}</p>
 
-                <Link to={`/kelas/detailkelas/${row.id}`}>
+                <Link to={`/kelas/detail_kelas/${row.id}`}>
                   <button className="btn-thumb">Daftar Kelas</button>
                 </Link>
               </div>

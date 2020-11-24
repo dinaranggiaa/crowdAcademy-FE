@@ -1,9 +1,26 @@
-import React, { Component } from "react";
+import React, { Fragment, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { detailKelas } from "../../../actions/pelajarActions";
 import "./detailKelas.css";
 
-export default class DetailKelas extends Component {
-  render() {
-    return (
+const DetailKelas = ({ history }) => {
+  const dispatch = useDispatch();
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const kelasDetail = useSelector((state) => state.kelasDetail);
+  const { kelas } = kelasDetail;
+  const { token } = userLogin;
+  console.log("detil", kelasDetail);
+
+  useEffect(() => {
+    if (token) {
+      dispatch(detailKelas());
+    }
+  }, [dispatch, history, token]);
+
+  return (
+    <Fragment>
       <div className="box-kelas">
         <div className="row-kelas">
           <div className="column-gambar">
@@ -15,25 +32,15 @@ export default class DetailKelas extends Component {
             />
           </div>
           <div className="column-informasi">
-            <p className="font-judul">Judul Kelas</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              ultrices enim sed magna commodo, eget facilisis tellus bibendum.
-              Mauris vulputate ante a imperdiet molestie. Sed non bibendum dui.
-              Nunc ultricies congue cursus. Phasellus consectetur justo finibus,
-              tincidunt ex hendrerit, hendrerit erat. Nulla et pulvinar libero.
-              Nullam ut urna ut lacus rutrum tincidunt vitae id dolor. Aenean
-              vel justo eros. Nunc maximus feugiat mi, nec dictum dui. Curabitur
-              lobortis convallis diam, eget porttitor tellus tristique sit amet.
-              Donec vitae neque pulvinar, accumsan arcu nec, bibendum velit.
-              Suspendisse quam felis, consequat a laoreet vel, mollis nec nulla.
-              Suspendisse sit amet ipsum augue. Mauris consectetur venenatis
-              blandit. Jadwal kelas :
-            </p>
-            <button className="btn btn-warning">Daftar Kelas</button>
+            <p className="font-judul">{kelas.judul_kelas}</p>
+            <p>{kelas.detail_kelas}</p>
+            <Link to={`/kelas/detailkelas/daftarkelas/${kelas.id}`}>
+              <button className="btn btn-warning">Daftar Kelas</button>
+            </Link>
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </Fragment>
+  );
+};
+export default DetailKelas;

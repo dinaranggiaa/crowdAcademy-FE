@@ -15,6 +15,11 @@ modalUp(){
   render() {
     return (
       <div class="page-content page-container" id="page-content">
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <div class="padding">
           <div class="row container d-flex justify-content-center">
             <div class="col-xl-10 col-md-12">

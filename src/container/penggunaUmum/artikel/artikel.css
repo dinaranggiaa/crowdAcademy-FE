@@ -1,0 +1,17 @@
+.box-artikel{
+    background-color: #fff;
+    color: black;
+    width: 1200px;
+    height: fit-content;
+    margin: 90px 15px 0 90px;
+    border-radius: 10px;
+}
+
+.column-gambar{
+    padding: 25px 25px 0 25px;
+}
+
+.column-informasi-artikel{
+    padding: 35px 55px 35px 35px;
+    text-align: justify;
+}

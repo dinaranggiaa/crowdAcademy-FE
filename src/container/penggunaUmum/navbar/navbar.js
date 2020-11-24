@@ -4,11 +4,15 @@ import React from "react";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PenggunaUmum from "../penggunaUmum";
-import Artikel from "../../artikel/artikel";
+import Artikel from "../artikel/artikel";
 import Login from "../../login/login";
 import SignUp from "../../signup/signup";
+//import { useDispatch } from "react-redux";
 
-function Navbar() {
+function Navbar({ history }) {
+  //const dispatch = useDispatch();
+
+
   return (
     <Router>
       <div className="App">
@@ -25,9 +29,7 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" href="#kelaspemrograman">
-                    Kelas Pemrograman
-                  </Link>
+                  <Link className="nav-link">Kategori Kelas</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to={"/artikel"}>
@@ -63,6 +65,7 @@ function Navbar() {
           <Route path="/home" component={PenggunaUmum} />
           <Route path="/artikel" component={Artikel} />
         </Switch>
+
         <div className="footer"></div>
       </div>
     </Router>

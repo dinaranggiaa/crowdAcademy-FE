@@ -1,0 +1,54 @@
+.container-daftar {
+  height: 625px;
+  background-color: #fff;
+}
+
+.box-daftar {
+  padding: 40px;
+  border-radius: 5px;
+  margin: 0 0 0 90px;
+  /* bring your own prefixes */
+  /* transform: translate(-50%, -50%); */
+}
+.row-daftar {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  border-radius: 5px;
+  margin-top: 45px;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.column-daftar {
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  flex: 50%;
+  max-width: 30%;
+}
+
+.column-informasi-daftar {
+  /* border: 1px solid black; */
+  width: 800px;
+  text-align: left;
+  margin: 150px 25px 150px 25px;
+  padding: 0 10px 10px 10px;
+}
+
+.column-gambar-daftar {
+  /* border: 1px solid black; */
+}
+
+.font-judul {
+  font-size: 25px;
+}
+
+.gambar-kelas-daftar {
+  border-radius: 8px;
+  /* border: 1px solid black; */
+}
+.informasi-kelas-detail {
+  width: 900px;
+  margin-left: 90px;
+  text-align: left;
+}

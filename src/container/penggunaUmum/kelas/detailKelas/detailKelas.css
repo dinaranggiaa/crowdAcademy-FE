@@ -1,0 +1,37 @@
+.box-kelas {
+  padding: 40px;
+  border-radius: 5px;
+  color: #fff;
+  /* bring your own prefixes */
+  /* transform: translate(-50%, -50%); */
+}
+.row-kelas {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  border-radius: 5px;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.column-kelas {
+  border-radius: 5px;
+  flex: 50%;
+  max-width: 30%;
+  height: 500px;
+}
+
+.column-informasi {
+  width: 800px;
+  text-align: left;
+  margin: 150px 25px 150px 25px;
+  padding: 0 10px 10px 10px;
+}
+
+.font-judul {
+  font-size: 25px;
+}
+
+.gambar-kelas {
+  border-radius: 8px;
+}
